@@ -1,0 +1,30 @@
+
+snippet jsfunc
+	    JSBool
+	${1}( cx , obj , argc , argv , rval )
+	    JSContext	*cx;
+	    JSObject	*obj; 
+	    uintN	argc;
+	    jsval	*argv; 
+	    jsval	*rval;
+	{
+	    ${2}
+	    return JS_TRUE;
+	}
+
+snippet jsarray
+		JSObject *${1:array} = JS_NewArrayObject( ${2:cx} , ${3:len}, ${4:vector} );
+		if (${1:array} == NULL)
+			return JS_FALSE;
+
+snippet jsclsm class method
+	static JSBool
+	${1:class}_${2:method}( cx , obj , id , vp )
+	    JSContext *cx;
+	    JSObject *obj;
+	    jsval id;
+	    jsval *vp;
+	{
+	    ${3}
+	    return JS_TRUE;
+	}

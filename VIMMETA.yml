@@ -1,0 +1,11 @@
+---
+author: Cornelius
+email: cornelius.howl@gmail.com
+libpath: .
+name: spidermonkey.vim
+type: plugin
+version: 0.1
+version_from: syntax/c/spidermonkey.vim
+vim_version:
+  op: '>='
+  version: 7.2

@@ -1,0 +1,10 @@
+doc/spidermonkey.vim.txt
+Makefile
+MANIFEST
+MANIFEST.SKIP
+META
+plugin/spidermonkey.vim
+README
+snippets/c-js.snippets
+syntax/c/spidermonkey.vim
+VIMMETA.yml
